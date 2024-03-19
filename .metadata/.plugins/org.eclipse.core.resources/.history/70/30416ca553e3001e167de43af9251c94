@@ -1,0 +1,25 @@
+package saturday;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Facebook_diminsion {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		//email dimension
+		int email_rect_ht = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getHeight();
+		int email_rect_wt = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getWidth();
+		int email_rect_X = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getX();
+		
+		//email dimension
+		int UN_rect_ht = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getHeight();
+		int UN_rect_wt = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getWidth();
+		int UN_rect_X = driver.findElement(By.xpath("//input[@name=\"email\"]")).getRect().getX();
+		
+		
+	}
+
+}

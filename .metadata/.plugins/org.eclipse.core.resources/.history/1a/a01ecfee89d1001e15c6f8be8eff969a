@@ -1,0 +1,18 @@
+package abstraction;
+
+public abstract class AbsDriver extends Abs{
+
+	
+	@Override
+		public void ShoesName()
+		{
+			System.out.println("Puma");
+		}
+@Override
+		public void ShoesPrice()
+		{
+	System.out.println("10000rupees");
+		}
+
+	
+}
